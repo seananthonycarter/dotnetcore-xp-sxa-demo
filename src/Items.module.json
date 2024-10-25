@@ -1,0 +1,36 @@
+{
+    "namespace": "Items",
+    "items" : {
+        "includes": [
+            {
+                "name": "api-key",
+                "path": "/sitecore/system/Settings/Services/API Keys/dotnetcore-xp-sxa-demo",
+                "scope": "singleItem"
+            },
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Project/dotnetcore-xp-sxa-demo"
+            },
+            {
+                "name": "layouts",
+                "path": "/sitecore/layout/Layouts/Project/dotnetcore-xp-sxa-demo"
+            },
+            {
+                "name": "renderings",
+                "path": "/sitecore/layout/Renderings/Project/dotnetcore-xp-sxa-demo"
+            },
+            {
+                "name": "placeholders",
+                "path": "/sitecore/layout/Placeholder Settings/Project/dotnetcore-xp-sxa-demo"
+            },
+            {
+                "name": "content",
+                "path": "/sitecore/content/dotnetcore-xp-sxa-demo"
+            },
+            {
+                "name": "media",
+                "path": "/sitecore/media library/dotnetcore-xp-sxa-demo"
+            }
+        ]
+    }
+}
