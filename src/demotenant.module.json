@@ -1,0 +1,32 @@
+{
+    "$schema": "../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "demotenant",
+    "items": {
+        "includes": [
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Project/Demo Tenant",
+                "allowedPushOperations": "createUpdateAndDelete",
+                "scope": "itemAndDescendants"
+            },
+            {
+                "name": "content-root",
+                "path": "/sitecore/content/Demo Tenant",
+                "allowedPushOperations": "createUpdateAndDelete",
+                "scope": "itemAndDescendants"
+            },
+            {
+                "name": "media",
+                "path": "/sitecore/media library/Project/Demo Tenant",
+                "allowedPushOperations": "createUpdateAndDelete",
+                "scope": "itemAndDescendants"
+            },
+            {
+                "name": "renderings",
+                "path": "/sitecore/layout/Renderings/Project/Demo Tenant",
+                "allowedPushOperations": "createUpdateAndDelete",
+                "scope": "itemAndDescendants"
+            }
+        ]
+    }
+}
