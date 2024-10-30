@@ -17,7 +17,7 @@
 		<Using Include="Sitecore.AspNetCore.SDK.LayoutService.Client.Extensions" />
 		<Using Include="Sitecore.AspNetCore.SDK.RenderingEngine.Extensions" />
 		<Using Include="Sitecore.AspNetCore.SDK.ExperienceEditor" />
-		<Using Include="Sitecore.AspNetCore.Starter.Models" />
+		<Using Include="aspnet_core_demodotcomsite.Models" />
 	</ItemGroup>
 
 </Project>
