@@ -17,6 +17,6 @@ ENTRYPOINT ["dotnet", "watch", "-v", "--project", ".\\rendering", "run", "--no-l
 FROM ${SOLUTION_IMAGE} as solution
 FROM mcr.microsoft.com/dotnet/sdk:6.0 as release
 WORKDIR /app
-COPY --from=solution /artifacts/rendering/ ./
+COPY --from=solution /artifacts/aspnet-core-demodotcomsite/ ./
 EXPOSE 80
 ENTRYPOINT ["dotnet", "dotnetcore-xp-sxa-demo.dll"]

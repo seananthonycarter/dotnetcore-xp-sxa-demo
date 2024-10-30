@@ -1,27 +1,67 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.AspNetCore.Localization;
+using Sitecore.AspNetCore.SDK.ExperienceEditor.Extensions;
+using System.Globalization;
+using aspnet_core_demodotcomsite.Extensions;
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-var app = builder.Build();
+SitecoreSettings? sitecoreSettings = builder.Configuration.GetSection(SitecoreSettings.Key).Get<SitecoreSettings>();
+ArgumentNullException.ThrowIfNull(sitecoreSettings);
 
-// Configure the HTTP request pipeline.
+builder.Services.AddRouting()
+                .AddLocalization()
+                .AddMvc();
+
+builder.Services.AddSitecoreLayoutService()
+                .AddGraphQlHandler("default", sitecoreSettings.DefaultSiteName!, sitecoreSettings.ExperienceEdgeToken!, sitecoreSettings.LayoutServiceUri!)
+                .AsDefaultHandler();
+
+builder.Services.AddSitecoreRenderingEngine(options =>
+{
+    options.AddStarterKitViews()
+           .AddDefaultPartialView("_ComponentNotFound");
+})
+                .ForwardHeaders()
+                .WithExperienceEditor(options => { options.JssEditingSecret = sitecoreSettings.EditingSecret ?? string.Empty; });
+
+WebApplication app = builder.Build();
+
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseExceptionHandler("/Error");
     app.UseHsts();
 }
+else
+{
+    app.UseDeveloperExceptionPage();
+}
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
+if (sitecoreSettings.EnableEditingMode)
+{
+    app.UseSitecoreExperienceEditor();
+}
 
 app.UseRouting();
+app.UseStaticFiles();
 
-app.UseAuthorization();
+const string defaultLanguage = "en";
+app.UseRequestLocalization(options =>
+{
+    // If you add languages in Sitecore which this site / Rendering Host should support, add them here.
+    List<CultureInfo> supportedCultures = [new CultureInfo(defaultLanguage)];
+    options.DefaultRequestCulture = new RequestCulture(defaultLanguage, defaultLanguage);
+    options.SupportedCultures = supportedCultures;
+    options.SupportedUICultures = supportedCultures;
+    options.UseSitecoreRequestLocalization();
+});
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+        "error",
+        "error",
+        new { controller = "Default", action = "Error" }
+    );
+
+app.MapSitecoreLocalizedRoute("sitecore", "Index", "Default");
+app.MapFallbackToController("Index", "Default");
 
 app.Run();

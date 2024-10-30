@@ -10,7 +10,7 @@
 	<ItemGroup>
 	  <PackageReference Include="Sitecore.AspNetCore.SDK.ExperienceEditor" />
 	  <PackageReference Include="Sitecore.AspNetCore.SDK.LayoutService.Client" />
-	  <PackageReference Include="Sitecore.AspNetCore.SDK.RenderingEngine"  />
+	  <PackageReference Include="Sitecore.AspNetCore.SDK.RenderingEngine" />
 	</ItemGroup>
 
 	<ItemGroup>
