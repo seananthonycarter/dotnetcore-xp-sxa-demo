@@ -4,11 +4,10 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform", "src\platform\Platform.csproj", "{816F099C-E14B-4468-9E34-87F993C6484D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RenderingHost", "src\rendering\RenderingHost.csproj", "{6F4279AB-4049-42F0-AFD0-06062586BCF6}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{196B5D43-B228-4632-9BC3-EAAF79B4EDA5}"
 	ProjectSection(SolutionItems) = preProject
 		nuget.config = nuget.config
+		Packages.props = Packages.props
 		README.md = README.md
 		sitecore.json = sitecore.json
 	EndProjectSection
@@ -25,10 +24,6 @@ Global
 		{816F099C-E14B-4468-9E34-87F993C6484D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{816F099C-E14B-4468-9E34-87F993C6484D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{816F099C-E14B-4468-9E34-87F993C6484D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6F4279AB-4049-42F0-AFD0-06062586BCF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F4279AB-4049-42F0-AFD0-06062586BCF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F4279AB-4049-42F0-AFD0-06062586BCF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F4279AB-4049-42F0-AFD0-06062586BCF6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{763EA59F-6F7B-48EC-A2AB-E079C30A496A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{763EA59F-6F7B-48EC-A2AB-E079C30A496A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{763EA59F-6F7B-48EC-A2AB-E079C30A496A}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -2,6 +2,7 @@
 using Sitecore.AspNetCore.SDK.LayoutService.Client.Exceptions;
 using Sitecore.AspNetCore.SDK.RenderingEngine.Attributes;
 using Sitecore.AspNetCore.SDK.RenderingEngine.Interfaces;
+using aspnet_core_demodotcomsite.Models;
 
 namespace aspnet_core_demodotcomsite.Controllers;
 

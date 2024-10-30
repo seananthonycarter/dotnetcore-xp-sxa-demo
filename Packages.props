@@ -9,6 +9,7 @@
     <Net6x>6.0-*</Net6x>
     <PlatformVersion>10.3.0</PlatformVersion>
     <SitecoreAspNetVersion>21.0.*</SitecoreAspNetVersion>
+	<AspNetCoreSdkVersion>0.0.11</AspNetCoreSdkVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Update="Sitecore.Kernel" Version="$(PlatformVersion)" />
@@ -17,7 +18,6 @@
     <PackageReference Update="Sitecore.LayoutService" Version="9.0.*" />
     <PackageReference Update="Sitecore.Assemblies.Platform" Version="$(PlatformVersion)" />
     <PackageReference Update="Sitecore.Assemblies.SitecoreHeadlessServicesServer" Version="21.0.*" />
-
     <PackageReference Update="Sitecore.AspNet.ExperienceEditor" Version="$(SitecoreAspNetVersion)" />
     <PackageReference Update="Sitecore.AspNet.Tracking" Version="$(SitecoreAspNetVersion)" />
     <PackageReference Update="Sitecore.AspNet.Tracking.VisitorIdentification" Version="$(SitecoreAspNetVersion)" />
@@ -27,5 +27,8 @@
     <PackageReference Update="Microsoft.Extensions.DependencyInjection.Abstractions" Version="$(Net6x)" />
     <PackageReference Update="Microsoft.Extensions.Http" Version="$(Net6x)" />
     <PackageReference Update="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="$(Net6x)" />
+	<PackageReference Update="Sitecore.AspNetCore.SDK.LayoutService.Client" Version="$(AspNetCoreSdkVersion)" />
+	<PackageReference Update="Sitecore.AspNetCore.SDK.RenderingEngine" Version="$(AspNetCoreSdkVersion)" />
+	<PackageReference Update="Sitecore.AspNetCore.SDK.ExperienceEditor" Version="$(AspNetCoreSdkVersion)" />
   </ItemGroup>
 </Project>
