@@ -31,7 +31,7 @@ COPY .\dotnetcore-xp-sxa-demo.config c:\inetpub\wwwroot\App_Config\Include
 
 
 # Add SXA module
-COPY --from=sxa \module\cm\content .\
+COPY --from=sxa \module\cd\content .\
 COPY --from=sxa \module\tools \module\tools
 RUN C:\module\tools\Initialize-Content.ps1 -TargetPath .\; `
     Remove-Item -Path C:\module -Recurse -Force;
