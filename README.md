@@ -1,7 +1,7 @@
 # dotnetcore-xp-sxa-demo
 
 ## About this Solution
-This solution has been created as an exercise in using Headless SXA with .NET Core on Sitecore Platform DXP aka XP. You can refer to the [walkthrough: Using the Getting Started template with SXA](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template-with-sxa.html) and follow the steps with reference to the [commit history](https://github.com/seananthonycarter/dotnetcore-xp-sxa-demo/commits/master/) of this repo to see the changes I made to the boilerplate solution that is created via the [Walkthrough: Using the Getting Started template](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template.html)
+This solution has been created as an exercise in using Headless SXA with .NET Core on Sitecore Platform DXP aka 'XP'. You can refer to the [walkthrough: Using the Getting Started template with SXA](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template-with-sxa.html) and follow the steps with reference to the [commit history](https://github.com/seananthonycarter/dotnetcore-xp-sxa-demo/commits/master/) of this repo to see the changes I made to the boilerplate solution that is created via the [Walkthrough: Using the Getting Started template](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template.html)
 I have borrowed from the  [XM Cloud ASP.NET Core Starter Kit](https://github.com/Sitecore/xmcloud-starter-dotnet) for the .NET Core solution changes required.
 
 

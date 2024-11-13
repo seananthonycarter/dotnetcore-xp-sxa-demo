@@ -10,9 +10,15 @@ SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Value: "{C2DC4690-AF44-48C7-BB21-90D1AD246732}"
+- ID: "1864e99d-c29a-40bf-96e0-b3e7896a013b"
+  Hint: UseLanguageSpecificLayout
+  Value: 
 - ID: "300fb7a0-b27f-44dd-9af0-b37a19723e0e"
   Hint: RouteTemplateName
   Value: Settings Route
+- ID: "30e0a829-637e-478c-a136-66adb568398d"
+  Hint: GraphQLEndpoint
+  Value: /sitecore/api/layout/render/jss
 - ID: "32ce6bbe-4217-46e5-9335-42793884cbe3"
   Hint: AppTemplate
   Value: "{A3918801-4D54-439E-89ED-6E04A467B40F}"
@@ -24,7 +30,7 @@ SharedFields:
   Value: "{21D8CAC8-5EEB-4902-9CF2-22CB26296AF0}"
 - ID: "5ca117eb-8782-4a4f-9f2f-30de31fc2e34"
   Hint: PlaceholdersPath
-  Value: "{EF94AAA9-A0DD-4B20-9D21-C720095502A9}"
+  Value: "{F4DD2BF7-5CC3-4368-97E5-B4799213A80D}"
 - ID: "72e83c8d-3578-4e50-b4c0-93a78a1729f2"
   Hint: FilesystemPath
   Value: "/dist/hcc-demo-site"
@@ -48,7 +54,7 @@ SharedFields:
   Value: "{D89177C4-72CF-4159-9990-F183BB3115EF}"
 - ID: "f29428d5-1285-48b8-a884-44057965829a"
   Hint: RenderingsPath
-  Value: "{BF4A1CBE-01DF-4AE3-BC44-81BB537E6C3B}"
+  Value: "{3FA67C6A-07A7-4387-AB27-A7078FB5D71A}"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{0FEEB907-58F0-44DE-B08C-2F43C063D0A5}"
@@ -70,11 +76,11 @@ Languages:
         sitecore\HXXG3xnNRt
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5f324ea7-388d-49c2-9479-f8167cd85f4d"
+      Value: "d68ab34c-6f2f-4c2f-918b-81bb4dc340a9"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\HXXG3xnNRt
+        sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20241105T162655Z
+      Value: 20241113T183357Z
