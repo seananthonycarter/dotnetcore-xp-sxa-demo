@@ -14,6 +14,57 @@ $envCheck;
 # Double check whether init has been run
 $envCheckVariable = "HOST_LICENSE_FOLDER";
 
+# Ensure windows container engine is turned on
+Start-Process -Wait -NoNewWindow cmd -ArgumentList /c, "DockerCli.exe -SwitchWindowsEngine" -WorkingDirectory "C:\Program Files\Docker\Docker\"
+
+# Kill IIS if it is running
+try { IISRESET /STOP }
+catch { Write-Host "IISReset failed or IIS not installed" -ForegroundColor Yellow }
+
+# Check port numbers
+function Test-SitecorePorts {
+    param (
+        [string[]]$portnumbers
+    )
+
+    foreach ($portnumber in $portnumbers) {
+        $result = test-netconnection -computername 127.0.0.1 -port $portnumber -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
+        if($result.TcpTestSucceeded)
+        {
+            Write-Error "Port $portnumber is in use and should be available for Sitecore on docker."
+        }
+        else
+        {
+            Write-Host "Port $portnumber available..." -ForegroundColor Green
+        }
+    }
+}
+
+Test-SitecorePorts 443, 8079, 14430, 8081, 8984, 8983
+
+# Check docker is running
+try {
+    # Try and check the service status (sometimes the service isn't listed at all)
+    $arrService = Get-Service -Name "Docker Engine"
+    if ($arrService.Status -ne 'Running') {
+        Write-Error "Docker for Windows is not running."
+    }
+} catch {
+    # You can get an error if the service doesn't exist which can happen if the gui isn't running
+    Write-Error "Docker for Windows is not running."
+}
+
+# Double check whether init has been run
+$envCheckVariable = "HOST_LICENSE_FOLDER"
+$envCheck = Get-Content .env -Encoding UTF8 | Where-Object { $_ -imatch "^$envCheckVariable=.+" }
+if (-not $envCheck) {
+    throw "$envCheckVariable does not have a value. Did you run 'init.ps1 -InitEnv'?"
+}
+
+
+
+
+
 foreach ($topology in $topologyArray)
 {
   $envCheck = Get-Content (Join-Path -Path ($startDirectory + $topology) -ChildPath .env) -Encoding UTF8 | Where-Object { $_ -imatch "^$envCheckVariable=.+" }
