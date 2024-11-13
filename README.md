@@ -1,22 +1,27 @@
 # dotnetcore-xp-sxa-demo
 
 ## About this Solution
-This solution has been created as an exercise in using Headless SXA with .NET Core on XP. You can refer to the [walkthrough: Using the Getting Started template with SXA](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template-with-sxa.html) and follow the steps and commit history to see the changes I made to the boilerplate solution that is created via the [Walkthrough: Using the Getting Started template](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template.html)
+This solution has been created as an exercise in using Headless SXA with .NET Core on Sitecore Platform DXP aka XP. You can refer to the [walkthrough: Using the Getting Started template with SXA](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template-with-sxa.html) and follow the steps with reference to the [commit history](https://github.com/seananthonycarter/dotnetcore-xp-sxa-demo/commits/master/) of this repo to see the changes I made to the boilerplate solution that is created via the [Walkthrough: Using the Getting Started template](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template.html)
 I have borrowed from the  [XM Cloud ASP.NET Core Starter Kit](https://github.com/Sitecore/xmcloud-starter-dotnet) for the .NET Core solution changes required.
 
 
-For simplicity, this solution does not implement Sitecore Helix conventions for
+This solution does not implement Sitecore Helix conventions for
 solution architecture. As you begin building your Sitecore solution,
 you should review [Sitecore Helix](https://helix.sitecore.net/) and the
 [Sitecore Helix Examples](https://sitecore.github.io/Helix.Examples/) for guidance
 on implementing a modular solution architecture.
 
 
+
+
+
 ## TODO and Known Issues
 > [!CAUTION]
-> This is not a starter project, rather it's an example of the approach you might take to create your own starter project using similar steps. Currently it works in editing host mode using an example site which I have serialised alongside the solution code:
+> This is not a starter project, rather it's an example of the approach you might take to create your own starter project using similar steps. The project includes an example site which renders in editing host mode (uses .NET Core rending host for the display part): 
 
 ![Experience Editor](experience-editing.jpg?raw=true "Experience Editor with XM Cloud Demo")
+
+The demo site has been serialised alongside the solution code.
 
 The following are known issues:
 - **Rendering host configuration** - While the rendering host operates in editing mode (editing host) the rendering host has some outstanding configuration issues to render the site
@@ -76,6 +81,11 @@ See Sitecore Containers documentation for more information on system requirement
 1. Wait for the startup script to open browser tabs for the rendered site
    and Sitecore Launchpad.
 
+## Troubleshooting
+* run 'docker ps' to check the status of running containers:
+
+![Check status of running containers](check-status-of-running-containers.jpg?raw=true "Check status of running containers")
+
 ## Using the Solution
 * A publish of the `Platform` project will update the running `cm` service.
 * The running `rendering` service uses `dotnet watch` and will recompile
@@ -90,5 +100,5 @@ See Sitecore Containers documentation for more information on system requirement
     ```
 
 
-To serialize the items to disk, run dotnet sitecore ser pull
-To push the items from disk to the Sitecore instance, run dotnet sitecore ser push
+* To serialise the Sitecore items to disk, run 'dotnet sitecore ser pull'
+* To push the serialised items from disk to the Sitecore instance, run 'dotnet sitecore ser push'
