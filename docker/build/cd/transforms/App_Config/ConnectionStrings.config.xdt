@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<connectionStrings  xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+	<add name="master" connectionString="user id=user;password=password;Data Source=(server);Database=Sitecore_Master" xdt:Transform="Insert" />
+</connectionStrings>

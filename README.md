@@ -1,9 +1,8 @@
 # dotnetcore-xp-sxa-demo
 
 ## About this Solution
-This solution is designed to help developers learn and get started quickly
-with Sitecore Containers, the ASP.NET Core Rendering SDK, and Sitecore
-Content Serialization.
+This solution has been created as an exercise in using Headless SXA with .NET Core on XP. You can refer to the [walkthrough: Using the Getting Started template with SXA](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template-with-sxa.html) and follow the steps and commit history to see the changes I made make the changes to the boilerplate solution that is created via the [Walkthrough: Using the Getting Started template](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template.html) 
+
 
 For simplicity, this solution does not implement Sitecore Helix conventions for
 solution architecture. As you begin building your Sitecore solution,
@@ -12,8 +11,7 @@ you should review [Sitecore Helix](https://helix.sitecore.net/) and the
 on implementing a modular solution architecture.
 
 ## Support
-The template output as provided is supported by Sitecore. Once changed or amended,
-the solution becomes a custom implementation and is subject to limitations as
+While the orginal template output as provided is supported by Sitecore, as this is a  custom implementation it is is subject to limitations as
 defined in Sitecore's [scope of support](https://kb.sitecore.net/articles/463549#ScopeOfSupport).
 
 ## Prerequisites
@@ -60,7 +58,7 @@ See Sitecore Containers documentation for more information on system requirement
    > this command, PowerShell 7 is not supported at this time.
 
     ```ps1
-    .\init.ps1 -InitEnv -LicenseXmlPath "C:\path\to\license.xml" -AdminPassword "DesiredAdminPassword" -Topology xp0
+    .\init.ps1 -InitEnv -LicenseXmlPath "C:\path\to\license.xml" -AdminPassword "DesiredAdminPassword" -Topology xp1
     ```
     The ```-Topology ``` parameter specify topology you need. This parameter is optional. The default value ```xp0```
 
@@ -70,13 +68,6 @@ See Sitecore Containers documentation for more information on system requirement
     ```ps1
     .\init.ps1
     ```
-
-    > Out of the box, this example does not include `.env` in the `.gitignore`.
-    > Individual users may override values using process or system environment variables.
-    > This file does contain passwords that would provide access to the running containers
-    > in the developer's environment. If your Sitecore solution and/or its data are sensitive,
-    > you may want to exclude these from source control and provide another
-    > means of centrally configuring the information within.
 
 1. After completing this environment preparation, run the startup script
    from the solution root:
@@ -97,3 +88,12 @@ See Sitecore Containers documentation for more information on system requirement
   project directly from Visual Studio.
 * Review README's found in the projects and throughout the solution
   for additional information.
+* To push/pull items In an ADMIN PowerShell, connect to the Sitecore instance:
+
+    ```ps1
+    dotnet sitecore login --cm https://cm.dotnetcore_xp_sxa_demo.localhost/ --auth https://id.dotnetcore_xp_sxa_demo.localhost --allow-write true
+    ```
+
+
+To serialize the items to disk, run dotnet sitecore ser pull
+To push the items from disk to the Sitecore instance, run dotnet sitecore ser push
