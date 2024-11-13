@@ -2,7 +2,7 @@
 
 ## About this Solution
 This solution has been created as an exercise in using Headless SXA with .NET Core on XP. You can refer to the [walkthrough: Using the Getting Started template with SXA](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template-with-sxa.html) and follow the steps and commit history to see the changes I made make the changes to the boilerplate solution that is created via the [Walkthrough: Using the Getting Started template](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template.html)
-I have borrowed from the  [XM Cloud ASP.NET Core Starter Kit](https://github.com/Sitecore/xmcloud-starter-dotnet) for the .NET Core solution chnages required
+I have borrowed from the  [XM Cloud ASP.NET Core Starter Kit](https://github.com/Sitecore/xmcloud-starter-dotnet) for the .NET Core solution changes required
 
 
 For simplicity, this solution does not implement Sitecore Helix conventions for
@@ -14,7 +14,7 @@ on implementing a modular solution architecture.
 
 ## TODO and Known Issues
 > [!CAUTION]
-> This is not a starter project, rather it's an example of the approach you might take to create your own starter project using similar steps. Currently it works in editing host mode using the Skateboard demo from XM Cloud :
+> This is not a starter project, rather it's an example of the approach you might take to create your own starter project using similar steps. Currently it works in editing host mode using the Skateboard demo featured in XM Cloud :
 
 ![Experience Editor](experience-editing.jpg?raw=true "Experience Editor with XM Cloud Demo")
 
@@ -24,7 +24,7 @@ The following are known issues:
 
 
 ## Support
-While the orginal template output as provided is supported by Sitecore, as this is a  custom implementation it is is subject to limitations as
+While the orginal template output as provided is supported by Sitecore, as this is a  custom implementation it is subject to limitations as
 defined in Sitecore's [scope of support](https://kb.sitecore.net/articles/463549#ScopeOfSupport).
 
 ## Prerequisites
