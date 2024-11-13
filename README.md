@@ -55,15 +55,14 @@ See Sitecore Containers documentation for more information on system requirement
     ```ps1
     .\init.ps1 -InitEnv -LicenseXmlPath "C:\path\to\license.xml" -AdminPassword "DesiredAdminPassword" -Topology xp1
     ```
-    The ```-Topology ``` parameter specify topology you need. This parameter is optional. The default value ```xp0```
+    The ```-Topology ``` parameter specifies topology. Although in the boilerplate you can specify the various options, for my demo I have only currently worked with a scaled environment, XP1, so you should set this to ```xp1```
 
-    If you check your `.env` into source control, other developers
+    I have checked in my `.env` file into source control, so potentially you
     can prepare a certificate and hosts file entries by simply running:
 
     ```ps1
     .\init.ps1
     ```
-
 
 1. After completing this environment preparation, run the startup script
    from the solution root:
