@@ -1,7 +1,8 @@
 # dotnetcore-xp-sxa-demo
 
 ## About this Solution
-This solution has been created as an exercise in using Headless SXA with .NET Core on XP. You can refer to the [walkthrough: Using the Getting Started template with SXA](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template-with-sxa.html) and follow the steps and commit history to see the changes I made make the changes to the boilerplate solution that is created via the [Walkthrough: Using the Getting Started template](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template.html) 
+This solution has been created as an exercise in using Headless SXA with .NET Core on XP. You can refer to the [walkthrough: Using the Getting Started template with SXA](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template-with-sxa.html) and follow the steps and commit history to see the changes I made make the changes to the boilerplate solution that is created via the [Walkthrough: Using the Getting Started template](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/walkthrough--using-the-getting-started-template.html)
+I have borrowed from the  [XM Cloud ASP.NET Core Starter Kit](https://github.com/Sitecore/xmcloud-starter-dotnet) for the .NET Core solution chnages required
 
 
 For simplicity, this solution does not implement Sitecore Helix conventions for
@@ -9,6 +10,16 @@ solution architecture. As you begin building your Sitecore solution,
 you should review [Sitecore Helix](https://helix.sitecore.net/) and the
 [Sitecore Helix Examples](https://sitecore.github.io/Helix.Examples/) for guidance
 on implementing a modular solution architecture.
+
+
+## TODO and Known Issues
+> [!CAUTION]
+> This is not a starter project, rather it's an example of the approach you might take to create your own starter project using similar steps. Currently it works in editing hist mode using the Skateboard demo from XM Cloud 
+
+The following are known issues:
+- **Rendering host configuration** - While the rendering host operates in editing mode (editing host) the rendering host has some outstanding configuration issues to render the site
+- **.NET Version** - The [XM Cloud ASP.NET Core Starter Kit](https://github.com/Sitecore/xmcloud-starter-dotnet) used .NET Core Version 8 whereas the bolier plate project used version 6 and although the solution builds and works in editing mode, there may be some work to do here
+
 
 ## Support
 While the orginal template output as provided is supported by Sitecore, as this is a  custom implementation it is is subject to limitations as
@@ -69,7 +80,8 @@ See Sitecore Containers documentation for more information on system requirement
     .\init.ps1
     ```
 
-1. After completing this environment preparation, run the startup script
+
+1. ~~After completing this environment preparation, run the startup script
    from the solution root:
     ```ps1
     .\up.ps1
@@ -79,7 +91,7 @@ See Sitecore Containers documentation for more information on system requirement
    accept the device authorization.
 
 1. Wait for the startup script to open browser tabs for the rendered site
-   and Sitecore Launchpad.
+   and Sitecore Launchpad.~~
 
 ## Using the Solution
 * A publish of the `Platform` project will update the running `cm` service.
