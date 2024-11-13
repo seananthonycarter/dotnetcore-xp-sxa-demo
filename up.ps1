@@ -54,16 +54,6 @@ try {
     Write-Error "Docker for Windows is not running."
 }
 
-# Double check whether init has been run
-$envCheckVariable = "HOST_LICENSE_FOLDER"
-$envCheck = Get-Content .env -Encoding UTF8 | Where-Object { $_ -imatch "^$envCheckVariable=.+" }
-if (-not $envCheck) {
-    throw "$envCheckVariable does not have a value. Did you run 'init.ps1 -InitEnv'?"
-}
-
-
-
-
 
 foreach ($topology in $topologyArray)
 {
