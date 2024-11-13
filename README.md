@@ -23,10 +23,6 @@ The following are known issues:
 - **.NET Version** - The [XM Cloud ASP.NET Core Starter Kit](https://github.com/Sitecore/xmcloud-starter-dotnet) used .NET Core Version 8 whereas the bolier plate project used version 6 and although the solution builds and works in editing mode, there may be some work to do here
 
 
-## Support
-While the orginal template output as provided is supported by Sitecore, as this is a  custom implementation it is subject to limitations as
-defined in Sitecore's [scope of support](https://kb.sitecore.net/articles/463549#ScopeOfSupport).
-
 ## Prerequisites
 * .NET 6.0 SDK
 * .NET Framework 4.8 SDK
@@ -83,7 +79,7 @@ See Sitecore Containers documentation for more information on system requirement
     ```
 
 
-1. ~~After completing this environment preparation, run the startup script
+1. After completing this environment preparation, run the startup script
    from the solution root:
     ```ps1
     .\up.ps1
@@ -93,7 +89,7 @@ See Sitecore Containers documentation for more information on system requirement
    accept the device authorization.
 
 1. Wait for the startup script to open browser tabs for the rendered site
-   and Sitecore Launchpad.~~
+   and Sitecore Launchpad.
 
 ## Using the Solution
 * A publish of the `Platform` project will update the running `cm` service.
