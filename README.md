@@ -14,7 +14,9 @@ on implementing a modular solution architecture.
 
 ## TODO and Known Issues
 > [!CAUTION]
-> This is not a starter project, rather it's an example of the approach you might take to create your own starter project using similar steps. Currently it works in editing hist mode using the Skateboard demo from XM Cloud 
+> This is not a starter project, rather it's an example of the approach you might take to create your own starter project using similar steps. Currently it works in editing host mode using the Skateboard demo from XM Cloud :
+
+![Experience Editor](experience-editing.jpg?raw=true "Experience Editor with XM Cloud Demo")
 
 The following are known issues:
 - **Rendering host configuration** - While the rendering host operates in editing mode (editing host) the rendering host has some outstanding configuration issues to render the site
