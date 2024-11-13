@@ -31,20 +31,6 @@ The following are known issues:
 
 See Sitecore Containers documentation for more information on system requirements.
 
-## What's Included
-* A `docker-compose` environment for each Sitecore topology (XPO, XP1, XM1)
-  with an ASP.NET Core rendering host.
-  > The containers structure is organized by specific topology environment (see `run\sitecore-xp0`, `run\sitecore-xp1`, `run\sitecore-xm1`).
-  > The included `docker-compose.yml` is a stock environment from the Sitecore
-  > Container Support Package. All changes/additions for this solution are included
-  > in the `docker-compose.override.yml`.
-
-* Serialized items for the Styleguide sample site (see `src\Items.module.config`).
-* An MSBuild project for an ASP.NET Core application which renders
-  the site (see `src\rendering`).
-* An MSBuild project for deploying configuration and code into
-  the Sitecore Content Management role. (see `src\platform`).
-
 ## Running this Solution
 1. If your local IIS is listening on port 443, you'll need to stop it.
    > This requires an elevated PowerShell or command prompt.
