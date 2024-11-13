@@ -1,0 +1,31 @@
+﻿---
+ID: "5133d780-f21d-4c8a-bcf1-bd881f41c646"
+Parent: "73c0b968-719b-4f08-9415-e34e7ecd61f5"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: "/sitecore/media library/Project/HCC Demo site collection/hcc-demo-site"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20241105T162654Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\HXXG3xnNRt
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\HXXG3xnNRt
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b6ff8bb5-e66a-4cd6-b3d2-b46174fc712c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\HXXG3xnNRt
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20241105T162654Z

@@ -1,0 +1,31 @@
+﻿---
+ID: "392f269c-e69e-4b3c-ac30-754dcbb67a6f"
+Parent: "21d8cac8-5eeb-4902-9cf2-22cb26296af0"
+Template: "c237d144-647a-4afe-aa7b-1570f3e3f139"
+Path: "/sitecore/content/HCC Demo site collection/hcc-demo-site/Data/Link Lists"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20241105T162709Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\HXXG3xnNRt
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\HXXG3xnNRt
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "51f1d6fe-1b21-46d5-af15-23c7d61d6887"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\HXXG3xnNRt
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20241105T162709Z

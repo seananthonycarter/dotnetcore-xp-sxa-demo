@@ -1,0 +1,38 @@
+﻿---
+ID: "3809f870-06a7-4e2f-ae9f-22055cb80e37"
+Parent: "1581a44c-d90a-43cd-8c67-db8f6e01a019"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/HCC Demo site collection/hcc-demo-site/Presentation/Headless Variants/Promo"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/window_dialog.png
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{63F9B1F7-5D78-4053-8480-70874BAF0DC4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20241105T162712Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\HXXG3xnNRt
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\HXXG3xnNRt
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a3ea888e-95f2-40c7-bb4e-2294f46cd54e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\HXXG3xnNRt
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20241105T162712Z
