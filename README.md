@@ -14,7 +14,7 @@ on implementing a modular solution architecture.
 
 ## TODO and Known Issues
 > [!CAUTION]
-> This is not a starter project, rather it's an example of the approach you might take to create your own starter project using similar steps. Currently it works in editing host mode using the an example site and which I have serialised alongside the solution code.
+> This is not a starter project, rather it's an example of the approach you might take to create your own starter project using similar steps. Currently it works in editing host mode using an example site which I have serialised alongside the solution code:
 
 ![Experience Editor](experience-editing.jpg?raw=true "Experience Editor with XM Cloud Demo")
 
