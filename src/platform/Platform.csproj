@@ -68,6 +68,7 @@
     <Content Include="App_Config\Include\Sitecore.LoadBalancing.config" />
     <Content Include="App_Config\Include\Sitecore.Media.config" />
     <Content Include="App_Config\Modules\z.Module.Overrides\z.Sitecore.XA.JSS.Foundation.Presentation.config" />
+    <Content Include="App_Config\Include\zzz\z.EnableGraphQL.config" />
     <None Include="Platform.wpp.targets" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="README.md" />

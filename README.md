@@ -86,6 +86,15 @@ See Sitecore Containers documentation for more information on system requirement
 
 ![Check status of running containers](check-status-of-running-containers.jpg?raw=true "Check status of running containers")
 
+* Sometimes you simply need to 'start fresh', in particular when Docker gets stuck, containers cannot run and/or are in a state of 'unhealthy'. In this case you can try running 'clean.ps1'. From the [SOLUTION ROOT]\docker folder run:
+
+   ```ps1
+    .\clean.ps1
+   ```
+> [!CAUTION]
+> Clean deletes all your data from [SOLUTION ROOT]\docker\data (including SQL) so ensure you have serialised any Sitecore content that you wish to preserve. 
+
+
 ## Using the Solution
 * A publish of the `Platform` project will update the running `cm` service.
 * The running `rendering` service uses `dotnet watch` and will recompile
